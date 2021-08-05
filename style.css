@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family:'Cabin', sans-serif;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: #1e272e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    max-width: 90%;
+}
+.quotes{
+    text-align: center;
+    margin: 50px;
+    max-width: 80%;
+    background-color: #485460;
+    opacity: .9;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    animation: quotes 2s ease-in-out;
+    
+}
+
+.quote{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    /* transition: ease-in 1s; */
+    animation: quote 2s ease-in-out;
+}
+
+.author{
+    text-align: end;
+    padding: 5px;
+    display:inline-block;
+    border-radius: 5px;
+    background-color: #1e272e;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    animation: author 2s ease-in-out;
+}
+
+@keyframes quote{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes author{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes quotes{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
